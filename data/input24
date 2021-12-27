@@ -1,0 +1,300 @@
+inp w
+mul x 0
+add x z
+mod x 26
+div z 1
+add x 14
+eql x w
+eql x 0
+mul y 0
+add y 25
+mul y x
+add y 1
+mul z y
+mul y 0
+add y w
+add y 8
+mul y x
+add z y
+    // z = repr(w1+8)
+----------------------------
+inp w
+mul x 0
+add x z
+mod x 26
+div z 1
+add x 13
+eql x w
+eql x 0
+mul y 0
+add y 25
+mul y x
+add y 1
+mul z y
+mul y 0
+add y w
+add y 8
+mul y x
+add z y
+    // z = repr(w1+8, w2+8)
+----------------------------
+inp w
+mul x 0
+add x z
+mod x 26
+div z 1
+add x 13
+eql x w
+eql x 0
+mul y 0
+add y 25
+mul y x
+add y 1
+mul z y
+mul y 0
+add y w
+add y 3
+mul y x
+add z y
+    // z = repr(w1+8, w2+8, w3+3)
+----------------------------
+inp w
+mul x 0
+add x z
+mod x 26
+div z 1
+add x 12
+eql x w
+eql x 0
+mul y 0
+add y 25
+mul y x
+add y 1
+mul z y
+mul y 0
+add y w
+add y 10
+mul y x
+add z y
+    // z = repr(w1+8, w2+8, w3+3, w4+10)
+----------------------------
+inp w
+mul x 0
+add x z
+mod x 26
+div z 26
+add x -12
+eql x w
+eql x 0
+mul y 0
+add y 25
+mul y x
+add y 1
+mul z y
+mul y 0
+add y w
+add y 8
+mul y x
+add z y
+    // MUST HAVE: w4-2 == w5
+    // max: (w4=9, w5=7)
+    // min: (w4=3, w5=1)
+    // z = repr(w1+8, w2+8, w3+3)
+----------------------------
+inp w
+mul x 0
+add x z
+mod x 26
+div z 1
+add x 12
+eql x w
+eql x 0
+mul y 0
+add y 25
+mul y x
+add y 1
+mul z y
+mul y 0
+add y w
+add y 8
+mul y x
+add z y
+    // z = repr(w1+8, w2+8, w3+3, w6+8)
+----------------------------
+inp w
+mul x 0
+add x z
+mod x 26
+div z 26
+add x -2
+eql x w
+eql x 0
+mul y 0
+add y 25
+mul y x
+add y 1
+mul z y
+mul y 0
+add y w
+add y 8
+mul y x
+add z y
+    // MUST HAVE: w6+6 == w7
+    // max: (w6=3, w7=9)
+    // min: (w6=1, w7=7)
+    // z = repr(w1+8, w2+8, w3+3)
+----------------------------
+inp w
+mul x 0
+add x z
+mod x 26
+div z 26
+add x -11
+eql x w
+eql x 0
+mul y 0
+add y 25
+mul y x
+add y 1
+mul z y
+mul y 0
+add y w
+add y 5
+mul y x
+add z y
+    // MUST HAVE: w3-8 == w8
+    // max: (w3=9, w8=1)
+    // min: (w3=9, w8=1)
+    // z = repr(w1+8, w2+8)
+----------------------------
+inp w
+mul x 0
+add x z
+mod x 26
+div z 1
+add x 13
+eql x w
+eql x 0
+mul y 0
+add y 25
+mul y x
+add y 1
+mul z y
+mul y 0
+add y w
+add y 9
+mul y x
+add z y
+    // z = repr(w1+8, w2+8, w9+9)
+----------------------------
+inp w
+mul x 0
+add x z
+mod x 26
+div z 1
+add x 14
+eql x w
+eql x 0
+mul y 0
+add y 25
+mul y x
+add y 1
+mul z y
+mul y 0
+add y w
+add y 3
+mul y x
+add z y
+    // z = repr(w1+8, w2+8, w9+9, w10+3)
+----------------------------
+inp w
+mul x 0
+add x z
+mod x 26
+div z 26
+add x 0
+eql x w
+eql x 0
+mul y 0
+add y 25
+mul y x
+add y 1
+mul z y
+mul y 0
+add y w
+add y 4
+mul y x
+add z y
+    // MUST HAVE: w10+3 == w11
+    // max: (w10=6, w11=9)
+    // min: (w10=1, w11=4)
+    // z = repr(w1+8, w2+8, w9+9)
+----------------------------
+inp w
+mul x 0
+add x z
+mod x 26
+div z 26
+add x -12
+eql x w
+eql x 0
+mul y 0
+add y 25
+mul y x
+add y 1
+mul z y
+mul y 0
+add y w
+add y 9
+mul y x
+add z y
+    // MUST HAVE: w9-3 == w12
+    // max: (w9=9, w12=6)
+    // min: (w9=4, w12=1)
+    // z = repr(w1+8, w2+8)
+----------------------------
+inp w
+mul x 0
+add x z
+mod x 26
+div z 26
+add x -13
+eql x w
+eql x 0
+mul y 0
+add y 25
+mul y x
+add y 1
+mul z y
+mul y 0
+add y w
+add y 2
+mul y x
+add z y
+    // MUST HAVE: w2-5 == w13
+    // max: (w2=9, w13=4)
+    // min: (w2=6, w13=1)
+    // z = repr(w1+8)
+----------------------------
+inp w
+mul x 0
+add x z
+mod x 26
+div z 26
+add x -6
+eql x w
+eql x 0
+mul y 0
+add y 25
+mul y x
+add y 1
+mul z y
+mul y 0
+add y w
+add y 7
+mul y x
+add z y
+    // MUST HAVE: w1+2 == w14
+    // max: (w1=7, w14=9)
+    // min: (w1=1, w14=3)
+    // z = repr()

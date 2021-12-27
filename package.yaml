@@ -1,0 +1,37 @@
+name:                adventofcode2021-hs
+version:             0.1.0.0
+github:              "uicus/adventofcode2021-hs"
+license:             BSD3
+author:              "Jakub Sutowicz"
+maintainer:          "jakubsutowicz@gmail.com"
+copyright:           "2021 Jakub Sutowicz"
+
+extra-source-files:
+- README.md
+
+description:         Please see the README on GitHub at <https://github.com/uicus/adventofcode2021-hs#readme>
+
+dependencies:
+- base >= 4.7 && < 5
+- monad-loops >= 0.4 && < 1
+- split >= 0.2 && < 1
+- containers >= 0.6 && < 1
+- either >= 5.0 && < 6
+- heap >= 1.0 && < 2
+- mtl >= 2.2 && < 3
+
+library:
+  source-dirs: src
+
+executables:
+  adventofcode2021-hs-exe:
+    main:                Main.hs
+    source-dirs:         app
+    ghc-options:
+    - -threaded
+    - -rtsopts
+    - -with-rtsopts=-N
+    - -O3
+    dependencies:
+    - adventofcode2021-hs
+
