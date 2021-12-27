@@ -1,7 +1,7 @@
 name:                adventofcode2021-hs
 version:             0.1.0.0
 github:              "uicus/adventofcode2021-hs"
-license:             BSD3
+license:             MIT
 author:              "Jakub Sutowicz"
 maintainer:          "jakubsutowicz@gmail.com"
 copyright:           "2021 Jakub Sutowicz"
